@@ -32,7 +32,7 @@ big_int big_int :: operator +(big_int num){
         clean(ans);
         return ans;
     }
-    if(v[0] == '-' && add[0] != '-'){ //When first number is positive but second number is negative
+    if(v[0] == '-' && add[0] != '-'){ //When first number is negative but second number is positive
         v = v.substr(1);
         ans = big_int(add) - big_int(v);
         clean(ans);
