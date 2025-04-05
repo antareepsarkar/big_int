@@ -3,7 +3,7 @@ This is a C++ library named 'big_int' which is made to handle big integers. It p
 an object of the big_int class. More methods can be added to this library as per the user's needs.
 
 # Installation and Modification
-![zip file download](./big_int.png)
+![zip file download](images/big_int.png)
 
 This library can be installed by downloading a zip folder of the repository. To download the zip file click on the 'code' button and then on 'Download ZIP'.
 
