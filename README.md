@@ -3,7 +3,7 @@ This is a C++ library named 'big_int' which is made to handle big integers. It p
 an object of the big_int class. More methods can be added to this library as per the user's needs.
 
 # Installation and Modification
-![zip file download](https://github.com/user-attachments/assets/e41d49b6-5fbe-4374-88e1-2b0013286e4b)
+![zip file download](./big_int.png)
 
 This library can be installed by downloading a zip folder of the repository. To download the zip file click on the 'code' button and then on 'Download ZIP'.
 
@@ -25,7 +25,7 @@ int main(){
 Both the ways mentioned above can be used to declare variables.
 
 # Value of a big_int variable
-The 'value' member of a big_int object gives the value of a big_int variable as a string. It can be accessed using the '.' operator.
+The 'val' member of a big_int object gives the value of a big_int variable as a string. It can be accessed using the '.' operator.
 ```cpp
 #include<iostream>
 #include "path\big_int.h"
