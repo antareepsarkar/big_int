@@ -13,7 +13,7 @@ big_int big_int :: factorial(big_int num){
     if(num < big_int("0")){
         return big_int("-1");
     }
-    if(num.val == "0"){
+    if(num.value == "0"){
         return big_int("1");
     }
     big_int ans("1");

@@ -19,7 +19,7 @@ big_int big_int :: operator /(big_int num){
             "Zero division error"
         );
     }
-    string n = this -> val;
+    string n = this -> value;
     string d = num.value;
     if(n[0] == '-' && d[0] != '-'){
         n = n.substr(1);

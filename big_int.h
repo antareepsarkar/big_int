@@ -38,8 +38,8 @@ class big_int{
 };
 
 //Constructor definition
-big_int :: big_int(string val = "0"){
-    this -> val = val;
+big_int :: big_int(string value = "0"){
+    this -> value = value;
 }
 
 //All dependent includes
