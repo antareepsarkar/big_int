@@ -25,7 +25,7 @@ int main(){
 Both the ways mentioned above can be used to declare variables.
 
 # Value of a big_int variable
-The 'val' member of a big_int object gives the value of a big_int variable as a string. It can be accessed using the '.' operator.
+The 'value' member of a big_int object gives the value of a big_int variable as a string. It can be accessed using the '.' operator.
 ```cpp
 #include<iostream>
 #include "path\big_int.h"
@@ -33,7 +33,7 @@ using namespace std;
 
 int main(){
     big_int a("6");
-    cout << a.val << endl; //Prints '6', the val member returns the value as a string
+    cout << a.value << endl; //Prints '6', the val member returns the value as a string
 }
 ```
 # Arithmetic Operations
