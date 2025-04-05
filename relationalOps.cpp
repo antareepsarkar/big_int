@@ -4,7 +4,7 @@ using namespace std;
 bool big_int :: operator >(big_int num){
     clean(num);
     clean(*this);
-    if(greater(num, *this).val == this -> val && num != *this){
+    if(greater(num, *this).value == this -> value && num != *this){
         return true;
     }
     return false;
@@ -13,7 +13,7 @@ bool big_int :: operator >(big_int num){
 bool big_int :: operator <(big_int num){
     clean(num);
     clean(*this);
-    if(greater(num, *this).val == num.val && num != *this){
+    if(greater(num, *this).value == num.value && num != *this){
         return true;
     }
     return false;
@@ -22,7 +22,7 @@ bool big_int :: operator <(big_int num){
 bool big_int :: operator >=(big_int num){
     clean(num);
     clean(*this);
-    if(greater(num, *this).val == this -> val){
+    if(greater(num, *this).value == this -> value){
         return true;
     }
     return false;
@@ -31,7 +31,7 @@ bool big_int :: operator >=(big_int num){
 bool big_int :: operator <=(big_int num){
     clean(num);
     clean(*this);
-    if(greater(num, *this).val == num.val){
+    if(greater(num, *this).value == num.value){
         return true;
     }
     return false;
@@ -40,7 +40,7 @@ bool big_int :: operator <=(big_int num){
 bool big_int :: operator ==(big_int num){
     clean(num);
     clean(*this);
-    if(num.val == this -> val){
+    if(num.value == this -> value){
         return true;
     }
     return false;
@@ -49,7 +49,7 @@ bool big_int :: operator ==(big_int num){
 bool big_int :: operator !=(big_int num){
     clean(num);
     clean(*this);
-    if(num.val != this -> val){
+    if(num.value != this -> value){
         return true;
     }
     return false;

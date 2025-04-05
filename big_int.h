@@ -10,7 +10,7 @@ class big_int{
         big_int partDiv(big_int, big_int); //To divide a number by another number number where the the quotient will between 0 to 9
 
     public:
-        string val; //To hold value of the big_int
+        string value; //To hold value of the big_int
         big_int(string); //Constructor
         
         //All operators
@@ -46,7 +46,7 @@ big_int :: big_int(string val = "0"){
 #include "add.cpp"
 #include "subtraction.cpp"
 #include "greater_smaller.cpp"
-#include "partMulti&Div.cpp"
+#include "partMultiandDiv.cpp"
 #include "multiplication.cpp"
 #include "division.cpp"
 #include "methods.cpp"

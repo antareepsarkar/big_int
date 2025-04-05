@@ -14,7 +14,7 @@ big_int big_int :: greater(big_int num1, big_int num2){
     }
     clean(num1);
     clean(num2);
-    string n1 = num1.val, n2 = num2.val;
+    string n1 = num1.value, n2 = num2.value;
     //Checks whether the first number is negative
     if(n1[0] == '-'){
         if(n2[0] != '-'){
@@ -83,7 +83,7 @@ big_int big_int :: smaller(big_int n1, big_int n2){
     catch(const exception &e){
         cout << "Exception " <<  e.what() << endl;
     }
-    if(greater(n1, n2).val == n1.val){
+    if(greater(n1, n2).value == n1.value){
         return n2;
     }
     return n1;

@@ -16,25 +16,25 @@ big_int big_int :: operator *(big_int multiplier){
 	big_int ans("0");
 	clean(multiplier);
 	clean(*this);
-	string v = this -> val, num = multiplier.val;
+	string v = this -> value, num = multiplier.value;
 	if(num[0] != '-' && v[0] == '-'){
 		v = v.substr(1);
 		ans = big_int(v) * big_int(num);
-		ans.val.insert(ans.val.begin(), '-');
+		ans.value.insert(ans.value.begin(), '-');
 		clean(ans);
 		return ans;
 	}
 	if(num[0] == '-' && v[0] != '-'){
 		num = num.substr(1);
 		ans = big_int(v) * big_int(num);
-		ans.val.insert(ans.val.begin(), '-');
+		ans.value.insert(ans.value.begin(), '-');
 		clean(ans);
 		return ans;
 	}
 	if(num[0] == '-' && v[0] == '-'){
 		v = v.substr(1);
 		num = num.substr(1);
-		multiplier.val = num;
+		multiplier.value = num;
 	}
 	int vInd = v.length() - 1, numInd = num.length() - 1;
 	int carry = 0;
@@ -43,7 +43,7 @@ big_int big_int :: operator *(big_int multiplier){
 		string s = "";
 		s.push_back(v[i]);
 		big_int partRes = partMultiplier(multiplier, big_int(s));
-		partRes.val.append(t, '0');
+		partRes.value.append(t, '0');
 		t ++;
 		ans = ans + partRes;
 	}

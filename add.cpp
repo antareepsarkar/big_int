@@ -16,13 +16,13 @@ big_int big_int :: operator +(big_int num){
     clean(*this);
     clean(num);
     big_int ans; //ans big_int variable
-    string v = this -> val;
-    string add = num.val;
+    string v = this -> value;
+    string add = num.value;
     if(v[0] == '-' && add[0] == '-'){ //When both numbers are negative
         v = v.substr(1);
         add = add.substr(1);
         ans = big_int(add) + big_int(v);
-        ans.val.insert(ans.val.begin(), '-');
+        ans.value.insert(ans.value.begin(), '-');
         clean(ans);
         return ans;
     }
@@ -60,7 +60,7 @@ big_int big_int :: operator +(big_int num){
         resInd --;
     }
     res[0] = (char)(carry + '0');
-    ans.val = res;
+    ans.value = res;
     clean(ans);
     return ans;
 }

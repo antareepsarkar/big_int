@@ -3,8 +3,8 @@ using namespace std;
 
 big_int big_int :: partMultiplier(big_int num1, big_int num2){//num2 only has one digit without any sign, also num1 does not have any sign
     big_int ans("0");    
-    string n1 = num1.val;
-    string n2 = num2.val;
+    string n1 = num1.value;
+    string n2 = num2.value;
     int n1Ind = n1.length() - 1;
     string res(n1Ind + 2, '0');
     int resInd = n1Ind + 1;
@@ -18,7 +18,7 @@ big_int big_int :: partMultiplier(big_int num1, big_int num2){//num2 only has on
         resInd --;
     }
     res[0] = char(carry + '0');
-    ans.val = res;
+    ans.value = res;
     clean(ans);
     return ans;
 }

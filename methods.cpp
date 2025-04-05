@@ -2,7 +2,7 @@
 using namespace std;
 
 bool big_int :: isInt(big_int num){
-    string n = num.val;
+    string n = num.value;
     int length = n.length();
     if(length == 0){
         return false;
@@ -20,7 +20,7 @@ bool big_int :: isInt(big_int num){
 
 //Only works if num is a valid big_int
 void big_int :: clean(big_int& num){
-    string n = num.val;
+    string n = num.value;
     if(n[0] == '+'){
         n = n.substr(1);
     }
@@ -44,7 +44,7 @@ void big_int :: clean(big_int& num){
     if(start == 1 && ind != length){
         n.insert(n.begin(), '-');
     }
-    num.val = n;
+    num.value = n;
     return;
 }
 

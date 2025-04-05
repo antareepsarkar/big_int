@@ -20,18 +20,18 @@ big_int big_int :: operator /(big_int num){
         );
     }
     string n = this -> val;
-    string d = num.val;
+    string d = num.value;
     if(n[0] == '-' && d[0] != '-'){
         n = n.substr(1);
         big_int ans = big_int(n) / big_int(d);
-		ans.val.insert(ans.val.begin(), '-');
+		ans.value.insert(ans.value.begin(), '-');
         clean(ans);
         return ans;
     }
     if(n[0] != '-' && d[0] =='-'){
         d = d.substr(1);
         big_int ans = big_int(n) / big_int(d);
-		ans.val.insert(ans.val.begin(), '-');
+		ans.value.insert(ans.value.begin(), '-');
         clean(ans);
         return ans;
     }
@@ -46,9 +46,9 @@ big_int big_int :: operator /(big_int num){
     big_int temp("0");
     int l = n.length();
     for(int i = 0; i < l; i ++){
-        temp.val.push_back(n[i]);
+        temp.value.push_back(n[i]);
         big_int bi = partDiv(temp, num);
-        ans.val.push_back(bi.val[0]);
+        ans.value.push_back(bi.value[0]);
         temp = temp - num * bi;
         clean(temp);
     }

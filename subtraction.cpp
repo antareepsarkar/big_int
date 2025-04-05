@@ -16,14 +16,14 @@ big_int big_int :: operator -(big_int num){
     big_int ans("0");
     clean(*this);
     clean(num);
-    string v = this -> val, sub = num.val;
-    if(this -> val == num.val){
+    string v = this -> value, sub = num.value;
+    if(this -> value == num.value){
         clean(ans);
         return ans;
     }
-    if(greater(*this, num).val ==  num.val){
+    if(greater(*this, num).value ==  num.value){
         ans = (big_int)num - *this;
-        ans.val.insert(ans.val.begin(), '-');
+        ans.value.insert(ans.value.begin(), '-');
         clean(ans);
         return ans;        
     }
@@ -76,7 +76,7 @@ big_int big_int :: operator -(big_int num){
     }
 
     res = res.substr(remove);
-    ans.val = res;
+    ans.value = res;
     clean(ans);
     return ans;
 }
