@@ -33,7 +33,7 @@ using namespace std;
 
 int main(){
     big_int a("6");
-    cout << a.value << endl; //Prints '6', the val member returns the value as a string
+    cout << a.value << endl; //Prints '6', the 'value' member returns the value as a string
 }
 ```
 # Arithmetic Operations
